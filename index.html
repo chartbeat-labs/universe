@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chartbeat Universe Visualization</title>
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+        <script src="js/requestAnimFrame-shim.js"></script>
+        <script src="js/Utils.js"></script>
+        <script src="js/Vector.js"></script>
+        <script src="js/Particle.js"></script>
+        <script src="js/World.js"></script>
+    </head>
+    <body>
+        <div class="stats">
+            <h1 id="host"></h1>
+        </div>
+        <div id="pageTitle"></div>
+
+        <script type="text/javascript">
+            (function() {
+                var world = new World({
+                                 'apikey': '317a25eccba186e0f6b558f45214c0e7',  // Change this to your API Key
+                                 'host': 'avc.com',  // Change this to your host
+                                 'maxPages': 50,
+                                 'repelStrength': 13
+                            });
+            })();
+        </script>
+    </body>
+</html>
