@@ -337,9 +337,7 @@ World.prototype.createParticles = function(data, max, thisReference) {
     return;
   }
 
-  if (data[self.particleCount]['stats']['type'] === 'Article') {
-    self.createParticle(data[self.particleCount], max);
-  }
+  self.createParticle(data[self.particleCount], max);
 
   // Add other particles with a slight delay...
   if (self.particles.length < data.length) {

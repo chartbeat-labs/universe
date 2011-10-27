@@ -33,11 +33,9 @@ Utils.getMaxPeopleInObject = function(obj) {
   for (var key in obj) {
     var currentPeople = obj[key]['stats']['people'];
     var type = obj[key]['stats']['type'];
-    if (type === 'Article') {
       if (currentPeople > max) {
         max = currentPeople;
       }
-    }
   }
 
   return max;
