@@ -283,7 +283,7 @@ World.prototype.initialFetch = function() {
       self.createParticles(self.data['pages'], max);
     },
     type: 'GET',
-    url: 'http://api.chartbeat.com/toppages/?host=' + self.host + '&limit=' + self.maxPages + '&apikey=' + self.apikey + '&types=1&v=2&jsonp=?'
+    url: '//api.chartbeat.com/toppages/?host=' + self.host + '&limit=' + self.maxPages + '&apikey=' + self.apikey + '&types=1&v=2&jsonp=?'
   });
 };
 
@@ -321,7 +321,7 @@ World.prototype.fetch = function(thisReference) {
       self.particles_ = newParticles;
     },
     type: 'GET',
-    url: 'http://api.chartbeat.com/toppages/?host=' + self.host + '&limit=' + self.maxPages + '&apikey=' + self.apikey + '&types=1&v=2&jsonp=?'
+    url: '//api.chartbeat.com/toppages/?host=' + self.host + '&limit=' + self.maxPages + '&apikey=' + self.apikey + '&types=1&v=2&jsonp=?'
   });
 };
 
